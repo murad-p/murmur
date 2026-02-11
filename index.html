@@ -14,21 +14,22 @@
         }
 
         body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            color: white;
-            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #2e1065, #020617);
-            background-size: 400% 400%;
-            animation: gradientBG 12s ease infinite;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            overflow: hidden;
-        }
-
-        /* Cam Kart Efekti */
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /* 4 farklı canlı renk ekledik */
+    background: linear-gradient(-45deg, #1e1b4b, #312e81, #4c1d95, #1e293b);
+    background-size: 400% 400%;
+    /* 10 saniyede bir renkler arası akış sağlar */
+    animation: gradientBG 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+  /* Cam Kart Efekti */
         .glass-card {
             background: rgba(255, 255, 255, 0.07);
             backdrop-filter: blur(15px);

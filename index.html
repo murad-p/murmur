@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murat Pircanoğlu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Dinamik Arka Plan */
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            background: linear-gradient(-45deg, #0f172a, #1e1b4b, #2e1065, #020617);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        /* Cam Kart Efekti */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 28px;
+            padding: 40px 25px;
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Yazı Animasyonu (Typewriter) */
+        .typewriter h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            overflow: hidden;
+            border-right: .15em solid #60a5fa; /* İmleç rengi */
+            white-space: nowrap;
+            margin: 0 auto 15px;
+            letter-spacing: .10em;
+            animation: 
+                typing 3.5s steps(30, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #60a5fa; }
+        }
+
+        p {
+            font-weight: 300;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+            animation-delay: 3.5s; /* Yazı bittikten sonra gelecek */
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 0.9; }
+        }
+
+        .social-links {
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+            animation-delay: 4.5s;
+        }
+
+        .social-links a {
+            display: inline-block;
+            color: #60a5fa;
+            text-decoration: none;
+            margin: 10px 15px;
+            font-weight: 600;
+            padding: 8px 16px;
+            border: 1px solid rgba(96, 165, 250, 0.3);
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: rgba(96, 165, 250, 0.1);
+            border-color: #60a5fa;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-card">
+        <div class="typewriter">
+            <h1>Murat Pircanoğlu</h1>
+        </div>
+        
+        <p>Merhaba ben Murat.</p>
+        
+        <div class="social-links">
+            <a href="https://github.com/murad-p" target="_blank">GitHub</a>
+            <a href="mailto:muratpircanoglu@gmail.com">E-Posta</a>
+        </div>
+    </div>
+
+</body>
+</html>
